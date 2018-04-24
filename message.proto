@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package idp;
+
+message Message {
+  required string channel = 1;
+  required Content data = 2;
+}
+
+message Content {
+  required string content = 1;
+}
