@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "MoveCommand.proto";
+import "ConfigCommand.proto";
+
+message CommandMessage {
+  enum Channel {
+    DEFAULT = 0;
+  }
+  Channel channel = 1;
+  Command command = 2;
+}
+
+message Command {
+  oneof command {
+    MoveCommand moveCommand = 1;
+    ConfigCommand configCommand = 2;
+  }
+}
