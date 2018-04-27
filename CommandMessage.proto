@@ -1,5 +1,8 @@
 syntax = "proto3";
 
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "CommandMessageProtos";
+
 import "MoveCommand.proto";
 import "ConfigCommand.proto";
 
