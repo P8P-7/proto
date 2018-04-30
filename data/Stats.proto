@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "StatsProtos";
+
+message CpuUsage {
+	uint64 total_usage = 1;
+	repeated uint64 percpu_usage = 2;
+	uint64 usage_in_kernelmode = 3;
+	uint64 usage_in_usermode = 4;
+}
+
+message MemoryData {
+	uint64 usage = 1;
+	uint64 max_usage = 2;
+	uint64 failcnt = 3;
+	uint64 limit = 4;
+}
+
+message MemoryUsage {
+	uint64 cache = 1;
+	MemoryData usage = 2;
+	MemoryData swap_usage = 3;
+	MemoryData kernel_usage = 4;
+	map<string, uint64> stats = 5;
+}
+
+message Stats {
+	CpuUsage cpu_usage = 1;
+	MemoryUsage memory_usage = 2;
+}

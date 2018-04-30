@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "MessageProtos";
+
+import "command/MoveCommand.proto";
+
+import "config/IoConfig.proto";
+import "config/VisionConfig.proto";
+
+import "data/Stats.proto";
+
+message Message {
+  oneof data {
+      CommandMessage command = 1;
+      ConfigMessage config = 2;
+      Stats stats = 3;
+  }
+}
+
+message CommandMessage {
+  oneof command {
+      MoveCommand moveCommand = 1;
+  }
+}
+
+message ConfigMessage {
+  oneof config {
+      IoConfig ioConfig = 1;
+      VisionConfig visionConfig = 2;
+  }
+}
