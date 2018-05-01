@@ -12,21 +12,14 @@ import "data/Stats.proto";
 
 message Message {
   oneof data {
-      CommandMessage command = 1;
-      ConfigMessage config = 2;
-      Stats stats = 3;
-  }
-}
-
-message CommandMessage {
-  oneof command {
+      /* Commands */
       MoveCommand moveCommand = 1;
-  }
-}
 
-message ConfigMessage {
-  oneof config {
-      IoConfig ioConfig = 1;
-      VisionConfig visionConfig = 2;
+      /* Configurations */
+      IoConfig ioConfig = 50;
+      VisionConfig visionConfig = 51;
+
+      /* Information */
+      Stats stats = 80;
   }
 }
