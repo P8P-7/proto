@@ -4,22 +4,19 @@ option java_package = "nl.team_goliath.app.protos";
 option java_outer_classname = "MessageProtos";
 
 import "command/MoveCommand.proto";
+import "command/FollowLineCommand.proto";
 
 import "config/IoConfig.proto";
 import "config/VisionConfig.proto";
-
-import "data/Stats.proto";
 
 message Message {
   oneof data {
       /* Commands */
       MoveCommand moveCommand = 1;
+      FollowLineCommand = 2;
+      MoveTowerCommand = 3;
 
       /* Configurations */
-      IoConfig ioConfig = 50;
-      VisionConfig visionConfig = 51;
-
-      /* Information */
-      Stats stats = 80;
+      VisionConfig visionConfig = 50;
   }
 }
