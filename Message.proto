@@ -5,8 +5,8 @@ option java_outer_classname = "MessageProtos";
 
 import "command/MoveCommand.proto";
 import "command/FollowLineCommand.proto";
+import "command/MoveTowerCommand.proto";
 
-import "config/IoConfig.proto";
 import "config/VisionConfig.proto";
 
 message Message {
