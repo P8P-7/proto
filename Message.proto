@@ -13,8 +13,8 @@ message Message {
   oneof data {
       /* Commands */
       MoveCommand moveCommand = 1;
-      FollowLineCommand = 2;
-      MoveTowerCommand = 3;
+      FollowLineCommand followLineCommand = 2;
+      MoveTowerCommand moveTowerCommand = 3;
 
       /* Configurations */
       VisionConfig visionConfig = 50;
