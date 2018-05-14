@@ -4,6 +4,18 @@ option java_package = "nl.team_goliath.app.protos";
 option java_outer_classname = "MoveCommandProtos";
 
 message MoveCommand {
-  int32 direction = 1;
-  int32 speed = 2;
+  enum gear{
+    FORWARD = 0;
+    BACKWARD = 1;
+    LOCK = 2;
+    FREE = 3;
+
+  }
+  int32 speed = 1;
+  enum motor{
+    LEFT_FRONT = 0;
+    LEFT_BACK = 1;
+    RIGHT_FRONT = 2;
+    RIGHT_BACK = 3;
+  }
 }
