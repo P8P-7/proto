@@ -9,8 +9,8 @@ import "command/MoveTowerCommand.proto";
 
 import "config/VisionConfig.proto";
 
-message Message {
-  oneof data {
+message CommandMessage {
+  oneof command {
       /* Commands */
       MoveCommand moveCommand = 1;
       FollowLineCommand followLineCommand = 2;

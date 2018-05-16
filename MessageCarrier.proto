@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "MessageProtos";
+
+import "CommandMessage.proto";
+import "SynchronizeMessage.proto";
+
+message MessageCarrier {
+  oneof message {
+      CommandMessage commandMessage = 1;
+      SynchronizeMessage synchronizeMessage = 2;
+  }
+}
