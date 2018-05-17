@@ -4,14 +4,14 @@ option java_package = "nl.team_goliath.app.protos";
 option java_outer_classname = "MoveCommandProtos";
 
 message MotorCommand {
-    enum gears{
+    enum gears {
         FORWARD = 0;
         BACKWARD = 1;
         LOCK = 2;
         FREE = 3;
 
     }
-    enum motors{
+    enum motors {
         LEFT_FRONT = 0;
         LEFT_BACK = 1;
         RIGHT_FRONT = 2;
