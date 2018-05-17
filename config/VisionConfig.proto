@@ -4,5 +4,5 @@ option java_package = "nl.team_goliath.app.protos";
 option java_outer_classname = "VisionConfigProtos";
 
 message VisionConfig {
-  bool camera_enabled = 1;
+    bool camera_enabled = 1;
 }
