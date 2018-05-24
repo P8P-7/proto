@@ -5,7 +5,7 @@ option java_outer_classname = "CommandMessageProtos";
 
 import "command/MoveCommand.proto";
 import "command/MoveWingCommand.proto";
-import "command/FollowLineCommand.proto";
+import "command/WunderhornCommand.proto";
 import "command/MoveTowerCommand.proto";
 
 import "config/VisionConfig.proto";
@@ -15,7 +15,7 @@ message CommandMessage {
         /* Commands */
         MoveCommand moveCommand = 1;
         MoveWingCommand moveWingCommand = 2;
-        FollowLineCommand followLineCommand = 3;
+        WunderhornCommand wunderhornCommand = 3;
         MoveTowerCommand moveTowerCommand = 4;
 
         /* Configurations */
