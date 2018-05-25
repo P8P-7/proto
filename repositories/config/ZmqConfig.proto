@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "ZmqConfigProtos";
+
+message ZmqConfig {
+    uint32 subscriber_port = 1;
+    uint32 publisher_port = 2;
+}

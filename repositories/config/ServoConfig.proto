@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "ServoConfigProtos";
+
+import "repositories/config/servos/Wing.proto";
+
+message ServoConfig {
+    repeated Wing wings = 1;
+}
