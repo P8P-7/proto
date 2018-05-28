@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "EmotionMessageProtos";
+
+enum Emotion {
+    NEUTRAL = 0;
+    ANGRY = 1;
+    SAD = 2;
+    SUPRISED = 3;
+    HAPPY = 4;
+    WINK_LEFT = 5;
+    WINK_RIGHT = 6;
+}
+
+message EmotionMessage {
+    Emotion emotion = 1;
+}
