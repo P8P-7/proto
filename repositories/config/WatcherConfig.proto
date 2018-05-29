@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "WatcherConfigProtos";
+
+message WatcherConfig {
+    uint32 polling_rate = 1;
+}
