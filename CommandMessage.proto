@@ -8,8 +8,6 @@ import "command/MoveWingCommand.proto";
 import "command/WunderhornCommand.proto";
 import "command/MoveTowerCommand.proto";
 
-import "config/VisionConfig.proto";
-
 message CommandMessage {
     oneof command {
         /* Commands */
@@ -17,8 +15,5 @@ message CommandMessage {
         MoveWingCommand moveWingCommand = 2;
         WunderhornCommand wunderhornCommand = 3;
         MoveTowerCommand moveTowerCommand = 4;
-
-        /* Configurations */
-        VisionConfig visionConfig = 50;
     }
 }

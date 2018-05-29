@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "MotorControllerConfigProtos";
+
+import "repositories/config/motor_controller/Motor.proto";
+
+message MotorControllerConfig {
+    string address = 1;
+    repeated Motor motors = 2;
+}

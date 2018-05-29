@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "ZmqConfigRepositoryProtos";
+
+import "repositories/config/ZmqConfig.proto";
+import "repositories/config/SerialConfig.proto";
+import "repositories/config/GpioConfig.proto";
+import "repositories/config/VisionConfig.proto";
+import "repositories/config/ServoConfig.proto";
+import "repositories/config/I2cConfig.proto";
+import "repositories/config/MotorControllerConfig.proto";
+
+message ConfigRepository {
+    ZmqConfig zmq= 1;
+    SerialConfig serial = 2;
+    GpioConfig gpio = 3;
+    VisionConfig vision = 4;
+    ServoConfig servos = 5;
+    I2cConfig i2c = 6;
+    MotorControllerConfig motor_controller = 7;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "PositionProtos";
+
+enum Position {
+    LEFT_FRONT = 0;
+    LEFT_BACK = 1;
+    RIGHT_FRONT = 2;
+    RIGHT_BACK = 3;
+}

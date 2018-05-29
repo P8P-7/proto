@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "MotorProtos";
+
+import "repositories/config/Position.proto";
+
+message Motor {
+    Position position = 1;
+    uint64 id = 2;
+}
