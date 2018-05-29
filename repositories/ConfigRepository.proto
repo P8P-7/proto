@@ -11,9 +11,10 @@ import "repositories/config/ServoConfig.proto";
 import "repositories/config/I2cConfig.proto";
 import "repositories/config/MotorControllerConfig.proto";
 import "repositories/config/EmotionConfig.proto";
+import "repositories/config/CommandExecutorConfig.proto";
 
 message ConfigRepository {
-    ZmqConfig zmq= 1;
+    ZmqConfig zmq = 1;
     SerialConfig serial = 2;
     GpioConfig gpio = 3;
     VisionConfig vision = 4;
@@ -21,4 +22,5 @@ message ConfigRepository {
     I2cConfig i2c = 6;
     MotorControllerConfig motor_controller = 7;
     EmotionConfig emotions = 8;
+    CommandExecutorConfig command_executor = 9;
 }
