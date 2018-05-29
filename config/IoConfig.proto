@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "nl.team_goliath.app.protos";
-option java_outer_classname = "IoConfigProtos";
-
-message IoConfig {
-  string publisher_ip = 1;
-  int32 publisher_port = 2;
-}
