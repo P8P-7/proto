@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "EmotionConfigProtos";
+
+message EmotionConfig {
+    string host = 1;
+    uint32 port = 2;
+}
