@@ -8,6 +8,9 @@ import "command/MoveWingCommand.proto";
 import "command/WunderhornCommand.proto";
 import "command/MoveTowerCommand.proto";
 import "command/DanceCommand.proto";
+import "command/LineDanceCommand.proto";
+import "command/ObstacleCourseCommand.proto";
+import "command/TransportRebuildCommand.proto";
 
 message CommandMessage {
     oneof command {
@@ -17,5 +20,8 @@ message CommandMessage {
         WunderhornCommand wunderhornCommand = 3;
         MoveTowerCommand moveTowerCommand = 4;
         DanceCommand danceCommand = 5;
+        LineDanceCommand lineDanceCommand = 6;
+        ObstacleCourseCommand obstacleCourseCommand = 7;
+        TransportRebuildCommand transportRebuildCommand = 8;
     }
 }
