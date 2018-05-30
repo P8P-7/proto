@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "EmotionRepositoryProtos";
+
+import "EmotionMessage.proto";
+
+message EmotionRepository {
+    Emotion emotion = 1;
+}

@@ -3,7 +3,6 @@ syntax = "proto3";
 option java_package = "nl.team_goliath.app.protos";
 option java_outer_classname = "SynchronizeMessageProtos";
 
-import "repositories/BatteryRepository.proto";
 import "google/protobuf/any.proto";
 
 message SynchronizeMessage {
