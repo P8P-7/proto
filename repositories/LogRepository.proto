@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_package = "nl.team_goliath.app.protos";
+option java_outer_classname = "LogRepositoryProtos";
+
+enum LogSeverity {
+    TRACE = 0;
+    DEBUG = 1;
+    INFO = 2;
+    WARNING = 3;
+    ERROR = 4;
+    FATAL = 5;
+}
+
+message LogRepository {
+    message Entry {
+        uint32 timestamp = 1;
+        uint32 thread_id = 2;
+        LogSeverity severity = 3;
+        string message = 4;
+    }
+
+    repeated Entry entries = 1;
+}
