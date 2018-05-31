@@ -3,15 +3,8 @@ syntax = "proto3";
 option java_package = "nl.team_goliath.app.protos";
 option java_outer_classname = "LoggingConfigProtos";
 
-message LoggingConfig {
-    enum Severity {
-        TRACE = 0;
-        DEBUG = 1;
-        INFO = 2;
-        WARNING = 3;
-        ERROR = 4;
-        FATAL = 5;
-    }
+import "repositories/LogRepository.proto";
 
-    Severity severity_level = 1;
+message LoggingConfig {
+    LogSeverity severity_level = 1;
 }
