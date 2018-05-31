@@ -13,6 +13,7 @@ import "repositories/config/MotorControllerConfig.proto";
 import "repositories/config/EmotionConfig.proto";
 import "repositories/config/CommandExecutorConfig.proto";
 import "repositories/config/WatcherConfig.proto";
+import "repositories/config/LoggingConfig.proto";
 
 message ConfigRepository {
     ZmqConfig zmq = 1;
@@ -25,4 +26,5 @@ message ConfigRepository {
     EmotionConfig emotions = 8;
     CommandExecutorConfig command_executor = 9;
     WatcherConfig watcher = 10;
+    LoggingConfig logging = 11;
 }
