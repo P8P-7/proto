@@ -7,4 +7,5 @@ import "repositories/LogRepository.proto";
 
 message LoggingConfig {
     LogSeverity severity_level = 1;
+    uint32 history_size = 2;
 }
