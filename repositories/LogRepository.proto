@@ -14,8 +14,8 @@ enum LogSeverity {
 
 message LogRepository {
     message Entry {
-        uint32 timestamp = 1;
-        uint32 thread_id = 2;
+        uint64 timestamp = 1;
+        string thread_id = 2;
         LogSeverity severity = 3;
         string message = 4;
     }
