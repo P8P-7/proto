@@ -1,7 +1,9 @@
 syntax = "proto3";
 
-option java_package = "nl.team_goliath.app.protos";
-option java_outer_classname = "SynchronizeMessageProtos";
+package goliath.proto;
+
+option java_package = "nl.team_goliath.app.proto";
+option java_outer_classname = "SynchronizeMessageProto";
 
 import "google/protobuf/any.proto";
 

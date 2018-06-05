@@ -1,7 +1,9 @@
 syntax = "proto3";
 
-option java_package = "nl.team_goliath.app.protos";
-option java_outer_classname = "EmotionConfigProtos";
+package goliath.proto.repositories;
+
+option java_package = "nl.team_goliath.app.proto";
+option java_outer_classname = "EmotionConfigProto";
 
 message EmotionConfig {
     string host = 1;

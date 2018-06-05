@@ -1,7 +1,9 @@
 syntax = "proto3";
 
-option java_package = "nl.team_goliath.app.protos";
-option java_outer_classname = "ZmqConfigRepositoryProtos";
+package goliath.proto.repositories;
+
+option java_package = "nl.team_goliath.app.proto";
+option java_outer_classname = "ZmqConfigRepositoryProto";
 
 import "repositories/config/ZmqConfig.proto";
 import "repositories/config/SerialConfig.proto";
