@@ -5,8 +5,6 @@ package goliath.proto.commands;
 option java_package = "nl.team_goliath.app.proto";
 option java_outer_classname = "MoveWingCommandProto";
 
-import "commands/Command.proto";
-
 message ServoCommand {
     enum Direction {
         UP = 0;
