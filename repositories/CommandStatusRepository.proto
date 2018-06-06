@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package goliath.proto.repositories;
+
+option java_package = "nl.team_goliath.app.proto";
+option java_outer_classname = "CommandStatusRepositoryProto";
+
+message CommandStatusItem {
+    enum CommandStatus {
+        STARTING = 0;
+        STARTED = 1;
+        STALE = 2;
+    }
+
+    int32 id = 1;
+    CommandStatus commandStatus = 2;
+}
+
+message CommandStatusRepository {
+    repeated CommandStatusItem status = 1;
+}
