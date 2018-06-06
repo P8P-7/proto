@@ -7,25 +7,27 @@ option java_outer_classname = "CommandMessageProto";
 
 import "commands/MoveCommand.proto";
 import "commands/MoveWingCommand.proto";
+import "commands/EnterCommand.proto";
 import "commands/WunderhornCommand.proto";
-import "commands/MoveTowerCommand.proto";
 import "commands/DanceCommand.proto";
 import "commands/LineDanceCommand.proto";
 import "commands/ObstacleCourseCommand.proto";
 import "commands/TransportRebuildCommand.proto";
 import "commands/InvalidateAllCommand.proto";
+import "commands/InterruptCommandCommand.proto";
 
 message CommandMessage {
     oneof command {
         /* Commands */
         commands.MoveCommand moveCommand = 1;
         commands.MoveWingCommand moveWingCommand = 2;
-        commands.WunderhornCommand wunderhornCommand = 3;
-        commands.MoveTowerCommand moveTowerCommand = 4;
+        commands.EnterCommand enterCommand = 3;
+        commands.WunderhornCommand wunderhornCommand = 4;
         commands.DanceCommand danceCommand = 5;
         commands.LineDanceCommand lineDanceCommand = 6;
         commands.ObstacleCourseCommand obstacleCourseCommand = 7;
         commands.TransportRebuildCommand transportRebuildCommand = 8;
         commands.InvalidateAllCommand invalidateAllCommand = 9;
+        commands.InterruptCommandCommand interruptCommandCommand = 10;
     }
 }
