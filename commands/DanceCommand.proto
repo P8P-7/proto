@@ -5,6 +5,8 @@ package goliath.proto.commands;
 option java_package = "nl.team_goliath.app.proto";
 option java_outer_classname = "DanceCommandProto";
 
-message DanceCommand {
+import "commands/Command.proto";
 
+message DanceCommand {
+    option (command_name) = "So you think you can Dance!?";
 }

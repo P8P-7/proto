@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package goliath.proto.commands;
+
+import "google/protobuf/descriptor.proto";
+
+extend google.protobuf.MessageOptions {
+    string command_name = 1337;
+}

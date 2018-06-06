@@ -5,7 +5,9 @@ package goliath.proto.commands;
 option java_package = "nl.team_goliath.app.proto";
 option java_outer_classname = "TransportRebuildCommandProto";
 
-message TransportRebuildCommand {
+import "commands/Command.proto";
 
+message TransportRebuildCommand {
+    option (command_name) = "Transport and Rebuild";
 }
 

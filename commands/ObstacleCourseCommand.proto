@@ -5,7 +5,9 @@ package goliath.proto.commands;
 option java_package = "nl.team_goliath.app.proto";
 option java_outer_classname = "ObstacleCourseCommandProto";
 
-message ObstacleCourseCommand {
+import "commands/Command.proto";
 
+message ObstacleCourseCommand {
+    option (command_name) = "Obstacle Course";
 }
 

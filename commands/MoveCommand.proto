@@ -5,6 +5,8 @@ package goliath.proto.commands;
 option java_package = "nl.team_goliath.app.proto";
 option java_outer_classname = "MoveCommandProto";
 
+import "commands/Command.proto";
+
 message MotorCommand {
     enum Gear {
         FORWARD = 0;
