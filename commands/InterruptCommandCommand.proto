@@ -6,5 +6,5 @@ option java_package = "nl.team_goliath.app.proto";
 option java_outer_classname = "InteruptCommandCommandProto";
 
 message InterruptCommandCommand {
-    int32 commandId = 1;
+    uint64 commandId = 1;
 }
