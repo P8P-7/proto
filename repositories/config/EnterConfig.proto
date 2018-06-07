@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package goliath.proto.repositories;
+
+option java_package = "nl.team_goliath.app.proto";
+option java_outer_classname = "EnterConfigProto";
+
+message EnterConfig {
+    enum EnterDirection {
+        FORWARDS = 0;
+        BACKWARDS = 1;
+        FREE = 2;
+        LOCKED = 3;
+    }
+
+    EnterDirection direction = 1;
+    uint32 speed = 2;
+}

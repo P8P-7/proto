@@ -8,6 +8,6 @@ option java_outer_classname = "LineDanceCommandProto";
 import "commands/Command.proto";
 
 message LineDanceCommand {
-    option (command_name) = "Line Dance";
+    option (command_name) = "\"Line\" Dance";
 }
 
