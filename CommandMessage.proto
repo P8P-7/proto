@@ -15,10 +15,10 @@ import "commands/ObstacleCourseCommand.proto";
 import "commands/TransportRebuildCommand.proto";
 import "commands/InvalidateAllCommand.proto";
 import "commands/InterruptCommandCommand.proto";
+import "commands/SynchronizeCommandsCommand.proto";
 
 message CommandMessage {
     oneof command {
-        /* Commands */
         commands.MoveCommand moveCommand = 1;
         commands.MoveWingCommand moveWingCommand = 2;
         commands.EnterCommand enterCommand = 3;
@@ -29,5 +29,6 @@ message CommandMessage {
         commands.TransportRebuildCommand transportRebuildCommand = 8;
         commands.InvalidateAllCommand invalidateAllCommand = 9;
         commands.InterruptCommandCommand interruptCommandCommand = 10;
+        commands.SynchronizeCommandsCommand synchronizeCommandsCommand = 11;
     }
 }
