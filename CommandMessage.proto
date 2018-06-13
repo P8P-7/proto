@@ -16,6 +16,7 @@ import "commands/TransportRebuildCommand.proto";
 import "commands/InvalidateAllCommand.proto";
 import "commands/InterruptCommandCommand.proto";
 import "commands/SynchronizeCommandsCommand.proto";
+import "commands/ShutdownCommand.proto";
 
 message CommandMessage {
     oneof command {
@@ -30,5 +31,6 @@ message CommandMessage {
         commands.InvalidateAllCommand invalidateAllCommand = 9;
         commands.InterruptCommandCommand interruptCommandCommand = 10;
         commands.SynchronizeCommandsCommand synchronizeCommandsCommand = 11;
+        commands.ShutdownCommand shutdownCommand = 12;
     }
 }
