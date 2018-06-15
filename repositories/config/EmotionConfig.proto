@@ -5,7 +5,8 @@ package goliath.proto.repositories;
 option java_package = "nl.team_goliath.app.proto";
 option java_outer_classname = "EmotionConfigProto";
 
+import "repositories/EmotionRepository.proto";
+
 message EmotionConfig {
-    string host = 1;
-    uint32 port = 2;
+    EmotionRepository.Emotion default_emotion = 1;
 }
