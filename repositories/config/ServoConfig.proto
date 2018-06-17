@@ -5,7 +5,7 @@ package goliath.proto.repositories;
 option java_package = "nl.team_goliath.app.proto";
 option java_outer_classname = "ServoConfigProto";
 
-import "repositories/config/servos/Wing.proto";
+import "repositories/servos/Wing.proto";
 
 message ServoConfig {
     repeated Wing wings = 1;
