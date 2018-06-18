@@ -5,7 +5,7 @@ package goliath.proto.repositories;
 option java_package = "nl.team_goliath.app.proto";
 option java_outer_classname = "MotorProto";
 
-import "repositories/config/Position.proto";
+import "repositories/Position.proto";
 
 message Motor {
     Position position = 1;

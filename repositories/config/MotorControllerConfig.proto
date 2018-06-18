@@ -5,7 +5,7 @@ package goliath.proto.repositories;
 option java_package = "nl.team_goliath.app.proto";
 option java_outer_classname = "MotorControllerConfigProto";
 
-import "repositories/config/motor_controller/Motor.proto";
+import "repositories/motor_controller/Motor.proto";
 
 message MotorControllerConfig {
     string address = 1;
