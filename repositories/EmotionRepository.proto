@@ -5,8 +5,16 @@ package goliath.proto.repositories;
 option java_package = "nl.team_goliath.app.proto";
 option java_outer_classname = "EmotionRepositoryProto";
 
-import "EmotionMessage.proto";
-
 message EmotionRepository {
+    enum Emotion {
+        NEUTRAL = 0;
+        ANGRY = 1;
+        SAD = 2;
+        SUPRISED = 3;
+        HAPPY = 4;
+        WINK_LEFT = 5;
+        WINK_RIGHT = 6;
+    }
+
     Emotion emotion = 1;
 }

@@ -7,12 +7,10 @@ option java_outer_classname = "MessageCarrierProto";
 
 import "CommandMessage.proto";
 import "SynchronizeMessage.proto";
-import "EmotionMessage.proto";
 
 message MessageCarrier {
     oneof message {
         CommandMessage commandMessage = 1;
         SynchronizeMessage synchronizeMessage = 2;
-        EmotionMessage emotionMessage = 3;
     }
 }
