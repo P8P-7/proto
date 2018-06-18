@@ -18,6 +18,7 @@ import "commands/InterruptCommandCommand.proto";
 import "commands/SynchronizeCommandsCommand.proto";
 import "commands/ShutdownCommand.proto";
 import "commands/SynchronizeSystemStatusCommand.proto";
+import "commands/BatteryVoltageCommand.proto";
 
 message CommandMessage {
     oneof command {
@@ -34,5 +35,6 @@ message CommandMessage {
         commands.SynchronizeCommandsCommand synchronizeCommandsCommand = 11;
         commands.ShutdownCommand shutdownCommand = 12;
         commands.SynchronizeSystemStatusCommand synchronizeSystemStatusCommand = 13;
+        commands.BatteryVoltageCommand batteryVoltageCommand = 14;
     }
 }
