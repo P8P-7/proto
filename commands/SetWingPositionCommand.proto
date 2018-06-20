@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package goliath.proto.commands;
+
+option java_package = "nl.team_goliath.app.proto";
+option java_outer_classname = "SetWingPositionCommandProto";
+
+message SetWingPositionCommand {
+    enum Position {
+        DEFAULT = 0;
+        ALL_UP = 1;
+        ALL_DOWN = 2;
+        RAMP = 3;
+    }
+    double speed = 1;
+}
