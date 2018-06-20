@@ -19,6 +19,7 @@ import "commands/SynchronizeCommandsCommand.proto";
 import "commands/ShutdownCommand.proto";
 import "commands/SynchronizeSystemStatusCommand.proto";
 import "commands/SynchronizeBatteryVoltageCommand.proto";
+import "commands/SetWingPositionCommand.proto";
 
 message CommandMessage {
     oneof command {
@@ -36,5 +37,6 @@ message CommandMessage {
         commands.ShutdownCommand shutdownCommand = 12;
         commands.SynchronizeSystemStatusCommand synchronizeSystemStatusCommand = 13;
         commands.SynchronizeBatteryVoltageCommand synchronizeBatteryVoltageCommand = 14;
+        commands.SetWingPositionCommand setWingPositionCommand = 15;
     }
 }
