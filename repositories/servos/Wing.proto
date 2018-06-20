@@ -10,4 +10,6 @@ import "repositories/Position.proto";
 message Wing {
     Position position = 1;
     uint64 id = 2;
+    bool mirror = 3;
+    uint32 number_of_sectors = 4;
 }

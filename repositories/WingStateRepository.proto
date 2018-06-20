@@ -15,13 +15,8 @@ message WingState {
     Wing position = 1;
     Mode mode = 2;
 
-    double current_load = 3;
-
-    bool needs_calibration = 5;
-    double calibrated_load = 6;
-
-    double current_angle = 7;
-    double current_speed = 8;
+    double current_angle = 3;
+    double current_speed = 4;
 }
 
 message WingStateRepository {
