@@ -13,4 +13,5 @@ message SetWingPositionCommand {
         RAMP = 3;
     }
     double speed = 1;
+    Position wingPosition = 2;
 }
