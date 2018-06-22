@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package goliath.proto.commands;
+
+option java_package = "nl.team_goliath.app.proto";
+option java_outer_classname = "MoveArmCommandProto";
+
+
+message MoveArmCommand {
+    enum ArmPosition {
+        TUCKED = 0;
+        HIGH = 1;
+        MED = 2;
+        LOW = 3;
+    }
+
+    ArmPosition position = 1;
+}
+

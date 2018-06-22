@@ -20,6 +20,8 @@ import "commands/ShutdownCommand.proto";
 import "commands/SynchronizeSystemStatusCommand.proto";
 import "commands/SynchronizeBatteryVoltageCommand.proto";
 import "commands/SetWingPositionCommand.proto";
+import "commands/MoveArmCommand.proto";
+import "commands/GripCommand.proto";
 
 message CommandMessage {
     oneof command {
@@ -38,5 +40,7 @@ message CommandMessage {
         commands.SynchronizeSystemStatusCommand synchronizeSystemStatusCommand = 13;
         commands.SynchronizeBatteryVoltageCommand synchronizeBatteryVoltageCommand = 14;
         commands.SetWingPositionCommand setWingPositionCommand = 15;
+        commands.MoveArmCommand moveArmCommand = 16;
+        commands.GripCommand gripCommand = 17;
     }
 }
