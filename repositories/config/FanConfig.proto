@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package goliath.proto.repositories;
+
+option java_package = "nl.team_goliath.app.proto";
+option java_outer_classname = "FanConfigProto";
+
+message FanConfig {
+    double start_threshold = 1;
+    double stop_threshold = 2;
+    uint32 pin = 3;
+}

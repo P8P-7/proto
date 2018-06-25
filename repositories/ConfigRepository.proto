@@ -17,6 +17,7 @@ import "repositories/config/CommandExecutorConfig.proto";
 import "repositories/config/WatcherConfig.proto";
 import "repositories/config/LoggingConfig.proto";
 import "repositories/config/EnterConfig.proto";
+import "repositories/config/FanConfig.proto";
 
 message ConfigRepository {
     ZmqConfig zmq = 1;
@@ -31,4 +32,5 @@ message ConfigRepository {
     WatcherConfig watcher = 10;
     LoggingConfig logging = 11;
     EnterConfig enter = 12;
+    FanConfig fan = 13;
 }
