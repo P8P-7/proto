@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package goliath.proto.repositories;
+
+option java_package = "nl.team_goliath.app.proto";
+option java_outer_classname = "DanceCommandConfigProto";
+
+message DanceCommandConfig {
+    uint32 chainsaw_speed_low = 1;
+    uint32 chainsaw_speed_medium = 2;
+    uint32 chainsaw_speed_high = 3;
+    uint32 chainsaw_speed_extra_high = 4;
+}
